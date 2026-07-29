@@ -1,25 +1,50 @@
 import { NavLink } from "react-router-dom"
 import {
-    HomeIcon
+    HomeIcon,
+    PhoneIcon,
+    UserIcon,
+    MagnifyingGlassIcon,
+    UserCircleIcon,
+    Cog6ToothIcon,
+    Squares2X2Icon,
+    ArrowLeftStartOnRectangleIcon
+
 } from "@heroicons/react/24/outline"
 
 const menuItems = [
     {name: "Dashboard",
     path: "/",
-    icon: HomeIcon}
+    icon: HomeIcon},
+    {name: "Categories",
+    path: "/categories",
+    icon: Squares2X2Icon},
+    {name: "Profile",
+    path: "/profile",
+    icon: UserCircleIcon},
+    {name: "FindFundi",
+    path: "/FindFundi",
+    icon: MagnifyingGlassIcon},
+    {name: "Settings",
+    path: "/settings",
+    icon: Cog6ToothIcon},
+    {name: "Logout",
+    path: "/logout",
+    icon: ArrowLeftStartOnRectangleIcon}
+    
 ]
 function Sidebar() {
   return (
     <>
-    <aside>
-        <div>
-            <h1>Fundi Portal</h1>
+    <aside className="w-54 bg-blue-400 text-white min-h-screen">
+        <div className="p-6 border-b border-black">
+            <h1 className="text-xl font-black">Fundi Portal</h1>
         </div>
         <nav>
             {menuItems.map((item)=> {
                 const Icon = item.icon;
                 return (
                     <NavLink
+                    className="flex items-center gap-3 py-4 transition"
                     key={item.name} to={item.path}>
                         <Icon className="w-6 h-6 text-gray-500" />
                         {item.name}

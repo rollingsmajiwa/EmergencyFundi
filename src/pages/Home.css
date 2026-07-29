@@ -1,0 +1,20 @@
+.homeContainer {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(../images/electrician.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.homeContent {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    
+}
