@@ -13,22 +13,22 @@ import {
 
 const menuItems = [
     {name: "Dashboard",
-    path: "/",
+    path: "/dashboard",
     icon: HomeIcon},
     {name: "Categories",
-    path: "/categories",
+    path: "/dashboard/categories",
     icon: Squares2X2Icon},
     {name: "Profile",
-    path: "/profile",
+    path: "/dashboard/profile",
     icon: UserCircleIcon},
     {name: "FindFundi",
-    path: "/FindFundi",
+    path: "/dashboard/findfundi",
     icon: MagnifyingGlassIcon},
     {name: "Settings",
-    path: "/settings",
+    path: "/dashboard/settings",
     icon: Cog6ToothIcon},
     {name: "Logout",
-    path: "/logout",
+    path: "/",
     icon: ArrowLeftStartOnRectangleIcon}
     
 ]
@@ -53,6 +53,8 @@ function Sidebar() {
             })}
         </nav>
     </aside>
+
+    
       
     </>
   )

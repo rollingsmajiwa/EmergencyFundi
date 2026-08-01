@@ -4,8 +4,8 @@ import Search from "./pages/Search"
 import Contact from "./pages/Contact"
 import Home from './pages/Home'
 import About from './pages/About'
-import Navbar from './components/Navbar'
-import Dashboard from './dashboards/Dashboard'
+import Dashboard from './dashboardsLayout/Dashboard'
+import MainLayout from './components/MainLayout'
 
 
 
@@ -20,18 +20,18 @@ function App() {
    
       <Router>
        
-     
-      <Navbar />
+    
        
         <Routes>
            
          
-         
+         <Route element={<MainLayout />}>
           <Route path="/contact" element={<Contact />}/>
           <Route path="/" element={<Home />}/>
           <Route path="/about" element={<About />}/>
           <Route path="/search" element={<Search />}/>
-          <Route path="/dashboard" element={<Dashboard />}/>
+          </Route>
+          <Route path="/dashboard/*" element={<Dashboard />}/>
          
           
 
