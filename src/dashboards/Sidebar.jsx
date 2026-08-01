@@ -37,7 +37,7 @@ function Sidebar() {
     <>
     <aside className="w-54 bg-blue-400 text-white min-h-screen">
         <div className="p-6 border-b border-black">
-            <h1 className="text-xl font-black">Fundi Portal</h1>
+            <h1 className="text-xl font-black">Customer Dashboard</h1>
         </div>
         <nav>
             {menuItems.map((item)=> {

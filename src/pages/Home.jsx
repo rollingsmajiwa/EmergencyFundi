@@ -5,7 +5,7 @@ function Home() {
   return (
     <>
       <div className='homeContainer'>
-        <div></div>
+        
         <div className="homeContent">
           <h1 className='text-5xl font-black tracking-wide w-xl'>Find Trusted Fundis Near You</h1>
           <p className='text-2xl w-xl'>Vetted Artisans, instant booking, quality quaranteed. From electricians to plumbers</p>
@@ -22,10 +22,10 @@ function Home() {
         </div>
 
       </div>
-      <div className='bg-blue-950 grid grid-cols-2 gap-2.5'>
+      <div className='bg-blue-950 grid grid-cols-2 gap-2.5 p-5'>
         <div>
           <div ><span className="text-xl font-black tracking-tight">Emergency</span><span className="text-xl font-bold tracking-tighter text-blue-600">Fundi</span></div>
-          <p className='text-gray-400'>Kenya's most trusted marketplace for skilled artisans. Find, verify, and hire the best fundis near you.</p>
+          <p className='text-gray-400'>The most trusted marketplace for skilled artisans. Find, verify, and hire the best fundis near you.</p>
         </div>
         <div><h3 className='text-xl font-bold text-white'>Categories</h3><ul>
           <li className='text-gray-400'>Electrician</li>

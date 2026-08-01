@@ -8,10 +8,12 @@ function Navbar() {
             <div ><span className="text-xl font-black tracking-tight">Emergency</span><span className="text-xl font-bold tracking-tighter text-blue-600">Fundi</span></div>
             <div>
                 <ul className="flex gap-10 text-gray-600 font-bold ">
-                    <li className="hover:underline"><Link to="/services">Services</Link></li>
-                    <li className="hover:underline"><Link to="/contact">Contact</Link></li>
                     <li className="hover:underline"><Link to="/">Home</Link></li>
+                   
+                    <li className="hover:underline"><Link to="/contact">Contact</Link></li>
+                    
                     <li className="hover:underline"><Link to="/about">About</Link></li>
+                    <li className="hover:underline"><Link to="/dashboard">Dashboard</Link></li>
                 
                 </ul>
             </div>
