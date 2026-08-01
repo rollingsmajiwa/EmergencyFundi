@@ -19,7 +19,7 @@ function Navbar() {
             </div>
             <div>
                 
-            <button type="submit" className="bg-blue-600 font-bold text-sm rounded-lg text-white p-1.5 hover:bg-blue-500">Log In</button>
+            <button type="submit" className="bg-blue-600 font-bold text-sm rounded-lg text-white p-1.5 hover:bg-blue-500"><Link to="/login">Log In</Link></button>
                 
             </div>
         </div>

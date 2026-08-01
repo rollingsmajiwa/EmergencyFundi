@@ -6,6 +6,8 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Dashboard from './dashboardsLayout/Dashboard'
 import MainLayout from './components/MainLayout'
+import PrivateRoute from './context/PrivateRoute'
+import Login from './pages/Login'
 
 
 
@@ -29,9 +31,9 @@ function App() {
           <Route path="/contact" element={<Contact />}/>
           <Route path="/" element={<Home />}/>
           <Route path="/about" element={<About />}/>
-          <Route path="/search" element={<Search />}/>
+          <Route path="/login" element={<Login />}/>
           </Route>
-          <Route path="/dashboard/*" element={<Dashboard />}/>
+          <Route path="/dashboard/*" element={<PrivateRoute><Dashboard /></PrivateRoute>}/>
          
           
 
