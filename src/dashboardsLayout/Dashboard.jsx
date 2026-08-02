@@ -47,14 +47,14 @@ function Dashboard() {
     <>
       <div className='flex h-screen bg-gray-100'>
         <Sidebar />
-        <div className='flex-row'>
-          <div className='bg-white p-6 rounded-2xl shadow-sm border border-gray-200 w-full max-w-6xl mx-auto pb-10'>
+        <div className='flex-row w-full'>
+          <div className='bg-white mt-4 mb-4 p-1 rounded-2xl shadow-sm border border-gray-200 w-full mx-auto'>
             <div>
               <h1 className='capitalize text-xl font-black tracking-wider'>Welcome Back, {name}!</h1>
               <div className='text-green-400 font-bold bg-gray-200 px-1 py-2 w-20 rounded-3xl'>{role}</div>
             </div>
           </div>
-          <div className='grid grid-cols-4 gap-3 rounded-lg p-4'>
+          <div className='grid grid-cols-4 gap-4 rounded-lg p-4'>
           {fundis.map((fundi) => (
                 <div
                   key={fundi.id}
@@ -74,7 +74,7 @@ function Dashboard() {
                   </div>
                   <button
                     disabled={!fundi.available}
-                    className="mt-4 w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg font-semibold disabled:bg-gray-300 disabled:cursor-not-allowed transition"
+                    className="mt-4 w-full bg-blue-500 hover:bg-blue-400 text-white py-2 rounded-lg font-semibold disabled:bg-gray-300 disabled:cursor-not-allowed transition"
                   >
                     {fundi.available ? 'Book Now' : 'Unavailable'}
                   </button>
