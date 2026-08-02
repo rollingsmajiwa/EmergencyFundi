@@ -1,5 +1,6 @@
 import { Routes, Route } from 'react-router-dom'
 import Sidebar from './Sidebar'
+import { useNavigate } from 'react-router-dom'
 import { useContext, useState, useEffect } from 'react'
 import { AuthContext } from '../context/AuthContext'
 
@@ -10,6 +11,7 @@ import Settings from './Settings'
 
 
 function Dashboard() {
+  const navigate = useNavigate()
   const { user } = useContext(AuthContext)
   const name = user?.email?.split('@')[0]
  const role = user?.role || 'Customer'
@@ -36,10 +38,40 @@ function Dashboard() {
   }
   fetchFundis();
   }, [])
+
+  const handleBooking = async (fundi) => {
+    const newBooking = {
+      id: Date.now.toString(),
+      clientId: name,
+      fundiName: fundi.name,
+      category: fundi.category,
+      phone: fundi.phone,
+      status: 'Active',
+      date: new Date().toISOString().split('T')[0]
+    };
+    try {
+      const response = await fetch('http://localhost:3001/bookings', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify(newBooking)
+      });
+      if(response.ok) {
+        alert(`You have successfully booked ${fundi.name}! Procced to your profile for contact details.`)
+        navigate('profile')
+      }
+
+    } catch (err) {
+      console.error("Booking error:", err)
+    }
+
+
+  }
   if(loading) return
     <div>Loading...</div>
   if(error) return
     <div>{error}</div>
+
+    
 
   
 
@@ -72,9 +104,9 @@ function Dashboard() {
                     <p className="text-sm font-medium text-blue-600">{fundi.category}</p>
                     <p className="text-xs text-gray-500 mt-2"> {fundi.location}</p>
                   </div>
-                  <button
+                  <button 
                     disabled={!fundi.available}
-                    className="mt-4 w-full bg-blue-500 hover:bg-blue-400 text-white py-2 rounded-lg font-semibold disabled:bg-gray-300 disabled:cursor-not-allowed transition"
+                    className="mt-4 w-full bg-blue-500 hover:bg-blue-400 text-white py-2 rounded-lg font-semibold disabled:bg-gray-300 disabled:cursor-not-allowed transition" onClick={()=> handleBooking(fundi)}
                   >
                     {fundi.available ? 'Book Now' : 'Unavailable'}
                   </button>
