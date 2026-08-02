@@ -9,8 +9,35 @@ import Profile from './Profile'
 import FindFundi from './FindFundi'
 import Settings from './Settings'
 
-
 function Dashboard() {
+  const { logout } = useContext(AuthContext)
+  const navigate = useNavigate()
+
+  const handleLogout = () => {
+    logout();
+    navigate('/login')
+  }
+  return (
+    <>
+     <div className='flex min-h-screen bg-gray-100'>
+      <Sidebar onLogout={handleLogout} />
+        <main className='flex-1 p-6'>
+          <Routes>
+             <Route path='/' element={<DashboardHome />} />
+            <Route path='categories' element={<Categories />} />
+            <Route path='profile' element={<Profile />} />
+            <Route path='findfundi' element={<FindFundi />} />
+            <Route path='settings' element={<Settings />} />
+          </Routes>
+        </main>
+      </div>
+    </>
+  )
+}
+export default Dashboard;
+
+
+function DashboardHome() {
   const navigate = useNavigate()
   const { user } = useContext(AuthContext)
   const name = user?.email?.split('@')[0]
@@ -57,7 +84,7 @@ function Dashboard() {
       });
       if(response.ok) {
         alert(`You have successfully booked ${fundi.name}! Procced to your profile for contact details.`)
-        navigate('profile')
+        navigate('navigate')
       }
 
     } catch (err) {
@@ -78,7 +105,7 @@ function Dashboard() {
   return (
     <>
       <div className='flex h-screen bg-gray-100'>
-        <Sidebar />
+      
         <div className='flex-row w-full'>
           <div className='bg-white mt-4 mb-4 p-1 rounded-2xl shadow-sm border border-gray-200 w-full mx-auto'>
             <div>
@@ -104,7 +131,7 @@ function Dashboard() {
                     <p className="text-sm font-medium text-blue-600">{fundi.category}</p>
                     <p className="text-xs text-gray-500 mt-2"> {fundi.location}</p>
                   </div>
-                  <button 
+                  <button type='button' 
                     disabled={!fundi.available}
                     className="mt-4 w-full bg-blue-500 hover:bg-blue-400 text-white py-2 rounded-lg font-semibold disabled:bg-gray-300 disabled:cursor-not-allowed transition" onClick={()=> handleBooking(fundi)}
                   >
@@ -119,18 +146,9 @@ function Dashboard() {
         </div>
       </div>
 
-      <div>
-        <Routes>
-          
-          <Route path='categories' element={<Categories />} />
-          <Route path='profile' element={<Profile />} />
-          <Route path='findfundi' element={<FindFundi />} />
-          <Route path='settings' element={<Settings />} />
-        </Routes>
-      </div>
+     
 
     </>
   )
 }
 
-export default Dashboard

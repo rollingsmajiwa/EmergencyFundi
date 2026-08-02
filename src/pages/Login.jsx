@@ -14,7 +14,7 @@ function Login() {
 
     const dummyUser = {
       id: Date.now(),
-      name: "rollings majiwa",
+      name: email.split('@')[0],
       email: email,
       role: "customer"
     };

@@ -173,6 +173,24 @@
       "phone": "+254712345678",
       "status": "Active",
       "date": "2026-08-02"
+    },
+    {
+      "id": "N9eeFLQZCvc",
+      "clientId": "Rollingsmajiwa",
+      "fundiName": "John Kamau",
+      "category": "Plumber",
+      "phone": "+254712345678",
+      "status": "Active",
+      "date": "2026-08-02"
+    },
+    {
+      "id": "-8fEmME_pOI",
+      "clientId": "Rollingsmajiwa",
+      "fundiName": "Mary Mwai",
+      "category": "Plumber",
+      "phone": "+254712345678",
+      "status": "Active",
+      "date": "2026-08-02"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
