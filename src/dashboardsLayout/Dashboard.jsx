@@ -51,7 +51,7 @@ function Dashboard() {
           <div className='bg-white mt-4 mb-4 p-1 rounded-2xl shadow-sm border border-gray-200 w-full mx-auto'>
             <div>
               <h1 className='capitalize text-xl font-black tracking-wider'>Welcome Back, {name}!</h1>
-              <div className='text-green-400 font-bold bg-gray-200 px-1 py-2 w-20 rounded-3xl'>{role}</div>
+              <div className='text-green-400 font-bold bg-gray-200 pl-1 py-1 w-20 rounded-3xl'>{role}</div>
             </div>
           </div>
           <div className='grid grid-cols-4 gap-4 rounded-lg p-4'>

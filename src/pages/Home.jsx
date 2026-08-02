@@ -15,10 +15,10 @@ function Home() {
       <div className='bg-blue-100 p-3'>
         <h2 className='text-center font-bold text-2xl'>Why Choose Us?</h2>
         <div className='grid grid-cols-2 gap-2'>
-          <div className='bg-blue-50 rounded-lg p-4'><h3 className='font-bold text-lg text-center'>Verified Professionals</h3><p>Every fundi is ID-verified and background-checked before listing.</p></div>
-          <div className='bg-blue-50 rounded-lg p-4'><h3 className='font-bold text-lg text-center'>Quality Guarantee</h3><p>Not satisfied? We help resolve disputes quickly and fairly.</p></div>
-          <div className='bg-blue-50 rounded-lg p-4'><h3 className='font-bold text-lg text-center'>Real Reviews Only</h3><p>Ratings from verified clients — no fake reviews, ever.</p></div>
-          <div className='bg-blue-50 rounded-lg p-4'><h3 className='font-bold text-lg text-center'>Instant Whatsapp</h3><p>Chat directly with your fundi — no middlemen, no delays.</p></div>
+          <div className='bg-blue-50 rounded-lg p-4 hover:shadow-md hover:-translate-y-2 transition-all border border-gray-200'><h3 className='font-bold text-lg text-center '>Verified Professionals</h3><p>Every fundi is ID-verified and background-checked before listing.</p></div>
+          <div className='bg-blue-50 rounded-lg p-4 hover:shadow-md hover:-translate-y-2 transition-all border border-gray-200'><h3 className='font-bold text-lg text-center'>Quality Guarantee</h3><p>Not satisfied? We help resolve disputes quickly and fairly.</p></div>
+          <div className='bg-blue-50 rounded-lg p-4 hover:shadow-md hover:-translate-y-2 transition-all border border-gray-200'><h3 className='font-bold text-lg text-center'>Real Reviews Only</h3><p>Ratings from verified clients — no fake reviews, ever.</p></div>
+          <div className='bg-blue-50 rounded-lg p-4 hover:shadow-md hover:-translate-y-2 transition-all border border-gray-200'><h3 className='font-bold text-lg text-center'>Instant Whatsapp</h3><p>Chat directly with your fundi — no middlemen, no delays.</p></div>
         </div>
 
       </div>
@@ -49,8 +49,12 @@ function Home() {
               <li className='text-gray-400'>Portal</li>
             </ul>
           </div>
+          
 
       </div>
+       <footer className="text-center text-sm text-gray-400 pt-6 border-t border-gray-400 bg-blue-950">
+          <p> &copy;2026 RollingsMajiwa. All rights reserved</p>
+                </footer>
     </>
   )
 }
