@@ -7,7 +7,9 @@ import {
     UserCircleIcon,
     Cog6ToothIcon,
     Squares2X2Icon,
-    ArrowLeftStartOnRectangleIcon
+    ArrowLeftStartOnRectangleIcon,
+    BellIcon
+    
 
 } from "@heroicons/react/24/outline"
 
@@ -30,6 +32,7 @@ const menuItems = [
     {name: "Logout",
     path: "/",
     icon: ArrowLeftStartOnRectangleIcon}
+    
     
 ]
 function Sidebar() {

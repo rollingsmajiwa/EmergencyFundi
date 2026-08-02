@@ -1,11 +1,13 @@
 import { Link } from "react-router-dom"
 
 
+
 function Navbar() {
   return (
     <nav className="bg-blue-50 p-2">
         <div className="flex justify-between">
             <div ><span className="text-xl font-black tracking-tight">Emergency</span><span className="text-xl font-bold tracking-tighter text-blue-600">Fundi</span></div>
+            
             <div>
                 <ul className="flex gap-10 text-gray-600 font-bold ">
                     <li className="hover:underline"><Link to="/">Home</Link></li>

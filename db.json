@@ -1,0 +1,68 @@
+{
+  "fundis": [
+    {
+      "id": "1",
+      "name": "John Kamau",
+      "category": "Plumber",
+      "location": "Westlands, Nairobi",
+      "phone": "+254712345678",
+      "available": true
+    },
+    {
+      "id": "2",
+      "name": "David Ochieng",
+      "category": "Electrician",
+      "location": "Kilimani, Nairobi",
+      "phone": "+254722334455",
+      "available": false
+    },
+    {
+      "id": "3",
+      "name": "Mary Mwai",
+      "category": "Plumber",
+      "location": "Kariobangi, Nairobi",
+      "phone": "+254712345678",
+      "available": true
+    },
+    {
+      "id": "4",
+      "name": "Mary Mwai",
+      "category": "Plumber",
+      "location": "Kariobangi, Nairobi",
+      "phone": "+254712345678",
+      "available": true
+    },
+    {
+      "id": "5",
+      "name": "Mary Mwai",
+      "category": "Plumber",
+      "location": "Kariobangi, Nairobi",
+      "phone": "+254712345678",
+      "available": true
+    },
+    {
+      "id": "6",
+      "name": "Mary Mwai",
+      "category": "Plumber",
+      "location": "Kariobangi, Nairobi",
+      "phone": "+254712345678",
+      "available": true
+    },
+    {
+      "id": "7",
+      "name": "Mary Mwai",
+      "category": "Plumber",
+      "location": "Kariobangi, Nairobi",
+      "phone": "+254712345678",
+      "available": true
+    },
+    {
+      "id": "8",
+      "name": "Mary Mwai",
+      "category": "Plumber",
+      "location": "Kariobangi, Nairobi",
+      "phone": "+254712345678",
+      "available": true
+    }
+  ]
+}
