@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 
 function Navbar() {
   return (
-    <nav className="bg-blue-50 p-2">
+    <nav className="bg-blue-50/70 backdrop-blur-sm p-2 fixed top-0 z-30 w-full">
         <div className="flex justify-between">
             <div ><span className="text-xl font-black tracking-tight">Emergency</span><span className="text-xl font-bold tracking-tighter text-blue-600">Fundi</span></div>
             

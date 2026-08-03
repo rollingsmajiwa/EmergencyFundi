@@ -48,28 +48,31 @@ export default function Profile() {
        
        
       </div>
-      <div className="text-amber-300">
-        {bookings.length}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 bg-gray-50">
+        <h2 className="text-base font-bold text-gray-800 mb-4">Your Total Bookings</h2>
+        <p className="text-lg font-black shadow-2xl text-blue-950">{bookings.length}</p>
       </div>
       <div>
-        {bookings.length > 0 && (
-          <div>
-            <h2>Your Bookings</h2>
-            <div>
-              {bookings.map((b) => (
-                <div key={b.id}>
-                  <div>
-                    <h4>{b.fundiName}</h4>
-                    <p>{b.category}</p>
-                    <p>{b.location}</p>
-                    <p>Call: {b.phone}</p>
+        <div>
+          {bookings.length > 0 && (
+            <div className="border-b-4 border-gray-700 mb-2">
+              <h2 className="text-xl font-bold text-gray-800 mb-4">Fundis</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 ">
+                {bookings.map((b) => (
+                  <div key={b.id}>
+                    <div className="bg-white border border-gray-200 p-4 rounded-2xl shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-blue-200 cursor-pointer">
+                      <h4 className="font-bold text-gray-900 text-sm">{b.fundiName}</h4>
+                      <p className="text-xs text-gray-500">{b.category}</p>
+                      <p className="flex gap-3 text-xs text-gray-400 mt-3 pl-1">{b.location}</p>
+                      <p>Call: {b.phone}</p>
+                    </div>
+                    <span className="bg-emerald-100 text-emerald-700 ">{b.status}</span>
                   </div>
-                  <span>{b.status}</span>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
-          </div>
-        )}
+          )}
+        </div>
       </div>
 
       
