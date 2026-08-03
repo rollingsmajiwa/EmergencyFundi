@@ -1,0 +1,93 @@
+.main-card {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: linear-gradient(-45deg, rgb(5, 5, 33), rgb(35, 35, 118), rgb(100, 100, 182));
+    animation: breathe 10s ease infinite;
+    background-size: 400% 400%;
+}
+@keyframes breathe {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+.blob-1 {
+    width: 300px;
+    height: 300px;
+    background-color: rgba(0, 210, 255, 0.4);
+    top: 15%;
+    left: 20%;
+    z-index: 1;
+    position: absolute;
+    filter: blur(60px);
+}
+.blob-2 {
+width: 250px;
+height: 250px;
+background: rgba(123, 31, 162, 0.4);
+bottom: 15%;
+right: 20%;
+z-index: 1;
+position: absolute;
+filter: blur(60px);
+
+}
+.card {
+    position: relative;
+    z-index: 2;
+    border-radius: 20px;
+    width: 400px;
+    padding: 40px;
+    text-align: center;
+    backdrop-filter: blur(15px);
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.6);
+}
+.logbtn {
+    width: 100px;
+    padding: 12px;
+    border-radius: 50px;
+    border: none;
+    background: linear-gradient(90deg, #8fdef0, #3a7bd5 );
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 50px;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.3);
+    color: white;
+    transition: 0.3s ease;
+    border: 1px solid rgb(255, 255, 255, 0.3);
+    margin-bottom: 8px;
+}
+.email {
+    width: 100%;
+    padding: 12px;
+    border-radius: 50px;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.3);
+    color: white;
+    transition: 0.3s ease;
+    border: 1px solid rgb(255, 255, 255, 0.3);
+    color: white;
+}
+.headerForm {
+     font-family: sans-serif;
+    color: white;
+    letter-spacing: 3px;
+    
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+    font-weight: 900;
+    font-size: xx-large;
+    
+}

@@ -57,7 +57,7 @@ export default function Profile() {
           {bookings.length > 0 && (
             <div className="border-b-4 border-gray-700 mb-2">
               <h2 className="text-xl font-bold text-gray-800 mb-4">Fundis</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 ">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {bookings.map((b) => (
                   <div key={b.id}>
                     <div className="bg-white border border-gray-200 p-4 rounded-2xl shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-blue-200 cursor-pointer">
