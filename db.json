@@ -26,39 +26,39 @@
     },
     {
       "id": "4",
-      "name": "Mary Mwai",
-      "category": "Plumber",
-      "location": "Kariobangi, Nairobi",
+      "name": "Cris Muturi",
+      "category": "Mason",
+      "location": "Githurai, Nairobi",
       "phone": "+254712345678",
       "available": true
     },
     {
       "id": "5",
-      "name": "Mary Mwai",
-      "category": "Plumber",
+      "name": "Felix Mwaura",
+      "category": "Mechanic",
       "location": "Kariobangi, Nairobi",
       "phone": "+254712345678",
       "available": true
     },
     {
       "id": "6",
-      "name": "Mary Mwai",
-      "category": "Plumber",
-      "location": "Kariobangi, Nairobi",
+      "name": "Cliff Johnson",
+      "category": "Painter",
+      "location": "Kibera, Nairobi",
       "phone": "+254712345678",
       "available": true
     },
     {
       "id": "7",
-      "name": "Mary Mwai",
-      "category": "Plumber",
-      "location": "Kariobangi, Nairobi",
+      "name": "Mercy Njeri",
+      "category": "Carpenter",
+      "location": "Runda, Kiambu",
       "phone": "+254712345678",
       "available": true
     },
     {
       "id": "8",
-      "name": "Mary Mwai",
+      "name": "Martin Abuon",
       "category": "Plumber",
       "location": "Kariobangi, Nairobi",
       "phone": "+254712345678",
@@ -67,130 +67,32 @@
   ],
   "bookings": [
     {
-      "id": "fcI6NNHRydA",
-      "clientId": "gloriatirop",
+      "id": "saVretjxiiA",
+      "clientId": "gloria",
       "fundiName": "John Kamau",
       "category": "Plumber",
       "phone": "+254712345678",
       "status": "Active",
-      "date": "2026-08-02"
+      "date": "2026-08-03"
     },
     {
-      "id": "cwb7-g3wpkU",
-      "clientId": "gloriatirop",
+      "id": "mZ2wg7BR-yQ",
+      "clientId": "gloria",
       "fundiName": "Mary Mwai",
       "category": "Plumber",
       "phone": "+254712345678",
       "status": "Active",
-      "date": "2026-08-02"
+      "date": "2026-08-03"
     },
     {
-      "id": "-2K7Dp1gRLE",
-      "clientId": "gloriatirop",
-      "fundiName": "Mary Mwai",
-      "category": "Plumber",
+      "id": "Z79LHmtEKbM",
+      "clientId": "gloria",
+      "fundiName": "Cris Muturi",
+      "category": "Mason",
       "phone": "+254712345678",
+      "location": "Githurai, Nairobi",
       "status": "Active",
-      "date": "2026-08-02"
-    },
-    {
-      "id": "PtTSl8FgVSg",
-      "clientId": "gloriatirop",
-      "fundiName": "Mary Mwai",
-      "category": "Plumber",
-      "phone": "+254712345678",
-      "status": "Active",
-      "date": "2026-08-02"
-    },
-    {
-      "id": "zEUohlOO1FI",
-      "clientId": "gloriatirop",
-      "fundiName": "Mary Mwai",
-      "category": "Plumber",
-      "phone": "+254712345678",
-      "status": "Active",
-      "date": "2026-08-02"
-    },
-    {
-      "id": "x0u3-4tg3tg",
-      "clientId": "gloriatirop",
-      "fundiName": "Mary Mwai",
-      "category": "Plumber",
-      "phone": "+254712345678",
-      "status": "Active",
-      "date": "2026-08-02"
-    },
-    {
-      "id": "1GAJ3vDghqI",
-      "clientId": "rollings",
-      "fundiName": "Mary Mwai",
-      "category": "Plumber",
-      "phone": "+254712345678",
-      "status": "Active",
-      "date": "2026-08-02"
-    },
-    {
-      "id": "bFaRvITYVZQ",
-      "clientId": "rollings",
-      "fundiName": "Mary Mwai",
-      "category": "Plumber",
-      "phone": "+254712345678",
-      "status": "Active",
-      "date": "2026-08-02"
-    },
-    {
-      "id": "NZ0mMBQjtm4",
-      "clientId": "rollings",
-      "fundiName": "John Kamau",
-      "category": "Plumber",
-      "phone": "+254712345678",
-      "status": "Active",
-      "date": "2026-08-02"
-    },
-    {
-      "id": "PdUHtO33X1M",
-      "clientId": "rollings",
-      "fundiName": "John Kamau",
-      "category": "Plumber",
-      "phone": "+254712345678",
-      "status": "Active",
-      "date": "2026-08-02"
-    },
-    {
-      "id": "XhVKW-6JlIY",
-      "clientId": "Rollingsmajiwa",
-      "fundiName": "John Kamau",
-      "category": "Plumber",
-      "phone": "+254712345678",
-      "status": "Active",
-      "date": "2026-08-02"
-    },
-    {
-      "id": "Ifxx7bG91KE",
-      "clientId": "Rollingsmajiwa",
-      "fundiName": "John Kamau",
-      "category": "Plumber",
-      "phone": "+254712345678",
-      "status": "Active",
-      "date": "2026-08-02"
-    },
-    {
-      "id": "N9eeFLQZCvc",
-      "clientId": "Rollingsmajiwa",
-      "fundiName": "John Kamau",
-      "category": "Plumber",
-      "phone": "+254712345678",
-      "status": "Active",
-      "date": "2026-08-02"
-    },
-    {
-      "id": "-8fEmME_pOI",
-      "clientId": "Rollingsmajiwa",
-      "fundiName": "Mary Mwai",
-      "category": "Plumber",
-      "phone": "+254712345678",
-      "status": "Active",
-      "date": "2026-08-02"
+      "date": "2026-08-03"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

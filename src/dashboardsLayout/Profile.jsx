@@ -48,6 +48,29 @@ export default function Profile() {
        
        
       </div>
+      <div className="text-amber-300">
+        {bookings.length}
+      </div>
+      <div>
+        {bookings.length > 0 && (
+          <div>
+            <h2>Your Bookings</h2>
+            <div>
+              {bookings.map((b) => (
+                <div key={b.id}>
+                  <div>
+                    <h4>{b.fundiName}</h4>
+                    <p>{b.category}</p>
+                    <p>{b.location}</p>
+                    <p>Call: {b.phone}</p>
+                  </div>
+                  <span>{b.status}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+      </div>
 
       
       

@@ -66,13 +66,15 @@ function DashboardHome() {
   fetchFundis();
   }, [])
 
-  const handleBooking = async (fundi) => {
+  const handleBooking = async (e, fundi) => {
+    if(e) e.preventDefault();
     const newBooking = {
       id: Date.now.toString(),
       clientId: name,
       fundiName: fundi.name,
       category: fundi.category,
       phone: fundi.phone,
+      location: fundi.location,
       status: 'Active',
       date: new Date().toISOString().split('T')[0]
     };
@@ -84,7 +86,7 @@ function DashboardHome() {
       });
       if(response.ok) {
         alert(`You have successfully booked ${fundi.name}! Procced to your profile for contact details.`)
-        navigate('navigate')
+        navigate('/dashboard/profile')
       }
 
     } catch (err) {
@@ -133,7 +135,8 @@ function DashboardHome() {
                   </div>
                   <button type='button' 
                     disabled={!fundi.available}
-                    className="mt-4 w-full bg-blue-500 hover:bg-blue-400 text-white py-2 rounded-lg font-semibold disabled:bg-gray-300 disabled:cursor-not-allowed transition" onClick={()=> handleBooking(fundi)}
+                    className="mt-4 w-full bg-blue-500 hover:bg-blue-400 text-white py-2 rounded-lg font-semibold disabled:bg-gray-300 disabled:cursor-not-allowed transition"
+                     onClick={(e)=> handleBooking(e, fundi)}
                   >
                     {fundi.available ? 'Book Now' : 'Unavailable'}
                   </button>
