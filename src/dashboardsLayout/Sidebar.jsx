@@ -19,7 +19,7 @@ const menuItems = [
     icon: HomeIcon},
     {name: "Find Fundi",
     path: "/dashboard/categories",
-    icon: Squares2X2Icon},
+    icon: MagnifyingGlassIcon},
     {name: "Profile",
     path: "/dashboard/profile",
     icon: UserCircleIcon},
