@@ -46,7 +46,7 @@ function Categories() {
   return (
     <>
       <h1 className='text-2xl font-black'>Find Fundi</h1>
-      <input className='w-full p-3 border rounded-lg text-sm focus:outline-none' type="text" placeholder='Search by name, loaction or trade (eg, plumber)' value={search} onChange={(e)=> setSearch(e.target.value)} />
+      <input className='w-full p-3 border rounded-lg mb-2.5 text-sm focus:outline-none' type="text" placeholder='Search by name, loaction or trade (eg, plumber)' value={search} onChange={(e)=> setSearch(e.target.value)} />
       {!loading && !error && (
         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4'>{filteredFundis.length === 0 ? (<p className='text-gray-600 text-md col-span-full'>No Fundis Found</p>) : (
           filteredFundis.map((f)=> (<div key={f.id} className='p-4 border rounded-lg bg-white flex flex-col justify-between'><div>

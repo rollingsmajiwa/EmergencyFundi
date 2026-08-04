@@ -44,9 +44,9 @@ function Sidebar() {
                 const Icon = item.icon;
                 return (
                     <NavLink
-                    className="flex items-center gap-3 py-4 transition"
+                    className="flex items-center gap-4 py-4 transition"
                     key={item.name} to={item.path} className={({isActive})=>`flex items-center gap-3 px-4 ${isActive ? 'bg-blue-600 text-white' : 'text-gray-700'}`}>
-                        <Icon className="w-6 h-6 text-gray-500" />
+                        <Icon className="w-7 h-7 text-gray-600" />
                         {item.name}
                     </NavLink>
                 )
