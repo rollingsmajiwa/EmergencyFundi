@@ -6,7 +6,7 @@ import { AuthContext } from '../context/AuthContext'
 
 import Categories from './Categories'
 import Profile from './Profile'
-import FindFundi from './FindFundi'
+
 import Settings from './Settings'
 
 function Dashboard() {
@@ -26,7 +26,7 @@ function Dashboard() {
              <Route path='/' element={<DashboardHome />} />
             <Route path='categories' element={<Categories />} />
             <Route path='profile' element={<Profile />} />
-            <Route path='findfundi' element={<FindFundi />} />
+           
             <Route path='settings' element={<Settings />} />
           </Routes>
         </main>

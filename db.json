@@ -163,6 +163,16 @@
       "location": "Westlands, Nairobi",
       "status": "Active",
       "date": "2026-08-03"
+    },
+    {
+      "id": "toWZktHDVJ8",
+      "clientId": "kennedy",
+      "fundiName": "John Kamau",
+      "category": "Plumber",
+      "phone": "+254712345678",
+      "location": "Westlands, Nairobi",
+      "status": "Active",
+      "date": "2026-08-03"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
