@@ -46,7 +46,7 @@ function Home() {
             <ul>
               <li className='text-gray-400'>Home</li>
               <li className='text-gray-400'>About</li>
-              <li className='text-gray-400'>Portal</li>
+              <li className='text-gray-400'>Contact</li>
             </ul>
           </div>
           
