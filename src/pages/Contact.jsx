@@ -33,7 +33,7 @@ function Contact() {
               rollingsmajiwa@gmail.com
             </p>
                 </div>
-                <h3>Follow Us</h3>
+               
                 <div></div>
                   </div>
           </div>
