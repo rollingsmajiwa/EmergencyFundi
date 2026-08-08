@@ -25,14 +25,12 @@ const menuItems = [
     icon: UserCircleIcon},
     {name: "Settings",
     path: "/dashboard/settings",
-    icon: Cog6ToothIcon},
-    {name: "Logout",
-    path: "/",
-    icon: ArrowLeftStartOnRectangleIcon}
+    icon: Cog6ToothIcon}
+   
     
     
 ]
-function Sidebar() {
+function Sidebar({ onLogout}) {
   return (
     <>
     <aside className="w-54 bg-blue-400 text-white min-h-screen">
@@ -52,6 +50,10 @@ function Sidebar() {
                 )
             })}
         </nav>
+        <button type="button" onClick={onLogout} className="flex items-center gap-3 p-2 w-full hover: bg-red-500 rounded-md text-left transition-colors">
+            <ArrowLeftStartOnRectangleIcon className="w-6 h-6" />
+            <span>Logout</span>
+        </button>
     </aside>
 
     
